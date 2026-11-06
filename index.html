@@ -3,133 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0c1830">
-  <meta name="description" content="Site de la Journée doctorale du laboratoire PEME à l'ENSA Khouribga : programme, informations pratiques, inscription et soumission des communications.">
+  <meta name="theme-color" content="#f4f8fb">
+  <meta name="description" content="Journée doctorale PEME à l’ENSA Khouribga : présentation, programme, dates importantes, inscription et soumission des communications.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Journée doctorale PEME | 2026–2027">
-  <meta property="og:description" content="Une rencontre pour partager les travaux de recherche, échanger et faire émerger de nouvelles collaborations.">
+  <meta property="og:title" content="Journée doctorale PEME — ENSA Khouribga">
+  <meta property="og:description" content="La recherche se rencontre. Découvrez la Journée doctorale du laboratoire PEME, édition 2026–2027.">
   <title>Journée doctorale PEME — ENSA Khouribga</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="config.js"></script>
-  <script defer src="script.js"></script>
+  <script defer src="config.js"></script><script defer src="script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
-  <div class="announcement" aria-label="Information sur la journée">
-    <div class="container announcement-inner">
-      <span class="status-pip" aria-hidden="true"></span>
-      <span>Édition <span data-config="edition">2026–2027</span> <span class="announcement-divider" aria-hidden="true">/</span> Informations et inscriptions à venir</span>
-      <a href="#participer">Découvrir <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
-  <header class="site-header" id="haut">
-    <div class="container header-inner">
-      <a class="logo" href="#haut" aria-label="Journée doctorale PEME - accueil">
-        <span class="logo-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
-        <span class="logo-copy"><strong>PEME<span class="logo-dot">.</span></strong><small>JOURNÉE DOCTORALE</small></span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="navigation" id="navigation" aria-label="Navigation principale">
-        <a href="#apropos">À propos</a>
-        <a href="#programme">Programme</a>
-        <a href="#participer">Participer</a>
-        <a href="#infos">Infos pratiques</a>
-        <a class="nav-cta" href="#contact">Nous contacter <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
+  <div class="institution-bar" id="haut"><div class="container institution-inner">
+    <a class="school-identity" href="https://ensak.usms.ac.ma/" target="_blank" rel="noopener noreferrer" aria-label="Site de l’École nationale des sciences appliquées de Khouribga, nouvel onglet"><img class="school-logo" src="assets/ensa-khouribga.jpg" width="130" height="82" alt="Logo de l’ENSA Khouribga"><span class="school-name"><strong>École Nationale des<br>Sciences Appliquées de Khouribga</strong><small>Université Sultan Moulay Slimane</small></span></a>
+    <div class="edition-lockup"><span>LABORATOIRE PEME</span><strong>Journée doctorale</strong><small>Édition <span data-config="edition">2026–2027</span></small></div>
+  </div></div>
+  <header class="site-nav"><div class="container nav-inner">
+    <a class="event-brand" href="#haut" aria-label="PEME, retour à l’accueil">PEME<span> / </span><small>Journée doctorale</small></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav class="navigation" id="navigation" aria-label="Navigation principale"><a href="#apropos">Présentation</a><a href="#programme">Programme</a><a href="#dates">Dates importantes</a><a href="#infos">Lieu &amp; accès</a><a class="nav-cta" href="#participer">Participer <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
   <main id="contenu">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-noise" aria-hidden="true"></div>
-      <div class="hero-gradient" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> LABORATOIRE PEME <span class="eyebrow-separator">✦</span> ENSA KHOURIBGA</div>
-          <h1 id="hero-title">La recherche<br>se <em>rencontre</em><span class="hero-period">.</span></h1>
-          <p class="hero-lead">Journée doctorale PEME <span data-config="edition">2026–2027</span></p>
-          <p class="hero-text">Une journée pour présenter ses travaux, croiser les regards et imaginer ensemble les prochaines avancées scientifiques.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#participer">Participer à la journée <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost" href="#programme">Explorer le programme <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="hero-quick-facts" aria-label="Informations clés">
-            <div class="quick-fact"><span class="quick-icon" aria-hidden="true">⌁</span><div><small>ÉDITION</small><strong data-config="edition">2026–2027</strong></div></div>
-            <div class="fact-divider" aria-hidden="true"></div>
-            <div class="quick-fact"><span class="quick-icon" aria-hidden="true">◷</span><div><small>DATE</small><strong data-config="eventDateDisplay">À confirmer</strong></div></div>
-            <div class="fact-divider" aria-hidden="true"></div>
-            <div class="quick-fact"><span class="quick-icon" aria-hidden="true">⌖</span><div><small>LIEU</small><strong>ENSA Khouribga</strong></div></div>
-          </div>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="art-corner art-corner-tl"></div><div class="art-corner art-corner-br"></div>
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-          <span class="orbit-satellite satellite-a"></span><span class="orbit-satellite satellite-b"></span>
-          <div class="star-field star-1">✦</div><div class="star-field star-2">✣</div><div class="star-field star-3">+</div>
-          <svg class="art-lines" viewBox="0 0 580 560" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="trace" x1="0" y1="0" x2="580" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#9b84fc"/><stop offset=".5" stop-color="#68dfd4"/><stop offset="1" stop-color="#9b84fc"/></linearGradient></defs>
-            <path d="M46 386C126 323 192 420 286 281S448 153 528 91" stroke="url(#trace)" stroke-opacity=".55" stroke-width="1.5"/>
-            <path d="M82 475C165 411 218 465 321 341S442 252 514 195" stroke="url(#trace)" stroke-opacity=".27" stroke-width="1.5"/>
-            <path d="M80 180C160 216 200 153 280 218S437 376 508 339" stroke="url(#trace)" stroke-opacity=".32" stroke-width="1.5"/>
-            <circle cx="286" cy="281" r="5" fill="#66E1D2"/><circle cx="321" cy="341" r="4" fill="#AE9CFF"/>
-            <circle cx="122" cy="362" r="3" fill="#9B84FC"/><circle cx="468" cy="147" r="3" fill="#66E1D2"/>
-          </svg>
-          <div class="art-core"><div class="core-outline"><div class="core-inset"><span class="core-top">SCIENCE &amp; IDEAS</span><span class="core-monogram">P<span>✦</span>M</span><span class="core-bottom">PEME / 2026–27</span></div></div></div>
-          <div class="art-label label-one"><span class="label-icon">01</span><span>RECHERCHE<small>Explorer</small></span></div>
-          <div class="art-label label-two"><span class="label-icon">02</span><span>ÉCHANGES<small>Partager</small></span></div>
-          <div class="art-label label-three"><span class="label-icon">03</span><span>INNOVATION<small>Construire</small></span></div>
-          <span class="art-coordinate coordinate-top">33°– / RECHERCHE</span><span class="art-coordinate coordinate-bottom">CONNEXIONS • 2026—2027</span>
-        </div>
-      </div>
-      <div class="container hero-bottom"><span>UNE RENCONTRE SCIENTIFIQUE AU SERVICE DES IDÉES</span><a href="#apropos">Défiler pour découvrir <span aria-hidden="true">↓</span></a></div>
+      <img class="hero-art" src="assets/science-banner.svg" width="1000" height="700" alt="" aria-hidden="true">
+      <div class="container hero-layout"><div class="hero-copy">
+        <p class="eyebrow"><span></span> RENCONTRE SCIENTIFIQUE · ENSA KHOURIBGA</p>
+        <p class="hero-edition">ÉDITION <span data-config="edition">2026–2027</span></p>
+        <h1 id="hero-title">Journée doctorale<br><strong>PEME<span>.</span></strong></h1>
+        <p class="hero-tagline">La recherche se rencontre.</p>
+        <p class="hero-description">Une journée pour présenter ses travaux, partager les idées et faire émerger de nouvelles collaborations.</p>
+        <div class="hero-actions"><a class="button button-orange" href="#programme">Découvrir le programme <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#participer">Participer à la journée <span aria-hidden="true">→</span></a></div>
+      </div><div class="hero-caption" aria-hidden="true"><span>EXPLORER.</span><span>PARTAGER.</span><span>CONSTRUIRE.</span><small>RECHERCHE · SCIENCE · INNOVATION</small></div></div>
+      <div class="container hero-bottom"><span>LABORATOIRE PEME</span><a href="#apropos">Explorer la rencontre <span aria-hidden="true">↓</span></a></div>
     </section>
-
-    <section class="section section-intro" id="apropos" aria-labelledby="about-heading">
-      <div class="container intro-layout">
-        <div><p class="section-label"><span>01 /</span> À PROPOS DE L'ÉVÉNEMENT</p><h2 id="about-heading">Des idées.<br>Des regards.<br><span class="gradient-text">Des découvertes.</span></h2></div>
-        <div class="intro-right"><p class="large-copy">La recherche avance plus loin lorsqu'elle se partage.</p><p>La Journée doctorale du laboratoire PEME réunit la communauté scientifique autour des travaux des doctorants, dans un esprit d'ouverture, de dialogue et de collaboration.</p><div class="intro-signature"><span class="signature-icon">✳</span><div><strong>Laboratoire PEME</strong><small>ENSA Khouribga</small></div></div></div>
+    <div class="event-strip" aria-label="L’essentiel de la journée"><div class="container event-strip-inner">
+      <div class="strip-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v4m10-4v4M4 10h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/><path d="M8 14h3m2 0h3M8 17h3"/></svg><div><span>DATE DE L’ÉVÉNEMENT</span><strong data-config="eventDateDisplay">À confirmer</strong></div></div>
+      <div class="strip-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><span>LIEU DE RENCONTRE</span><strong>ENSA Khouribga, Maroc</strong></div></div>
+      <div class="strip-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-4a6 6 0 0 1 12 0v4M16 4a3 3 0 0 1 0 6m3 11v-4a5 5 0 0 0-2-4"/></svg><div><span>COMMUNAUTÉ SCIENTIFIQUE</span><strong>Doctorants &amp; chercheurs</strong></div></div>
+    </div></div>
+    <div class="container conference-layout">
+      <aside class="conference-sidebar" aria-label="Rubriques de la journée"><div class="sidebar-inner">
+        <p class="sidebar-title">LA JOURNÉE DOCTORALE</p>
+        <nav class="sidebar-links" aria-label="Navigation des rubriques"><a href="#apropos" class="is-active" aria-current="location"><span>01</span> Présentation <b aria-hidden="true">↗</b></a><a href="#programme"><span>02</span> Programme <b aria-hidden="true">↗</b></a><a href="#dates"><span>03</span> Dates importantes <b aria-hidden="true">↗</b></a><a href="#participer"><span>04</span> Inscription &amp; soumission <b aria-hidden="true">↗</b></a><a href="#infos"><span>05</span> Lieu &amp; accès <b aria-hidden="true">↗</b></a><a href="#contact"><span>06</span> Contact <b aria-hidden="true">↗</b></a></nav>
+        <div class="sidebar-note"><span class="status-dot"></span><strong>Informations à venir</strong><p>La date et les modalités seront publiées après validation par l’organisation.</p></div>
+        <a class="sidebar-programme" data-link="programmeUrl" href="#programme">Programme de la journée <span aria-hidden="true">↓</span><small data-status="programmeUrl">PDF à venir</small></a>
+      </div></aside>
+      <div class="conference-content">
+        <section class="content-section welcome-section" id="apropos" aria-labelledby="about-heading">
+          <p class="section-label">BIENVENUE À LA JOURNÉE DOCTORALE PEME</p><h2 id="about-heading">Un rendez-vous pour<br>la recherche <em>doctorale.</em></h2>
+          <p class="lead">La recherche avance plus loin lorsqu’elle se partage.</p><p>La Journée doctorale du laboratoire PEME réunit la communauté scientifique autour des travaux des doctorants, dans un esprit d’ouverture, de dialogue et de collaboration.</p><p>À l’ENSA Khouribga, cette rencontre offre un espace pour présenter les avancées scientifiques, confronter les approches et construire de nouvelles perspectives de recherche.</p>
+          <div class="feature-grid"><article class="feature"><span>01 /</span><h3>Présenter</h3><p>Mettre en valeur les travaux et les contributions des doctorants.</p></article><article class="feature"><span>02 /</span><h3>Échanger</h3><p>Croiser les approches et bénéficier de retours constructifs.</p></article><article class="feature"><span>03 /</span><h3>Collaborer</h3><p>Créer des liens entre chercheurs, équipes et disciplines.</p></article></div>
+        </section>
+        <section class="content-section programme-section" id="programme" aria-labelledby="programme-heading">
+          <div class="section-heading"><div><p class="section-label">02 / LE DÉROULEMENT</p><h2 id="programme-heading">Au programme.</h2></div><span class="status-badge">Aperçu indicatif</span></div><p>Le programme détaillé et les horaires seront communiqués après validation par le comité d’organisation.</p>
+          <ol class="schedule"><li><span class="schedule-number">01</span><div><span class="schedule-category">OUVERTURE</span><h3>Accueil &amp; lancement</h3><p>Accueil des participants et ouverture de la rencontre.</p></div><span class="schedule-arrow" aria-hidden="true">↗</span></li><li><span class="schedule-number">02</span><div><span class="schedule-category">PARTAGE SCIENTIFIQUE</span><h3>Présentations &amp; discussions</h3><p>Communications scientifiques et échanges autour des travaux doctoraux.</p></div><span class="schedule-arrow" aria-hidden="true">↗</span></li><li><span class="schedule-number">03</span><div><span class="schedule-category">RENCONTRES</span><h3>Échanges &amp; clôture</h3><p>Discussions, perspectives et conclusion de la journée.</p></div><span class="schedule-arrow" aria-hidden="true">↗</span></li></ol>
+          <a class="text-link" data-link="programmeUrl" href="#programme">Consulter le programme définitif <span aria-hidden="true">↗</span></a><span class="inline-status" data-status="programmeUrl">Publication à venir</span>
+        </section>
+        <section class="content-section dates-section" id="dates" aria-labelledby="dates-heading"><p class="section-label">03 / LES ÉCHÉANCES</p><h2 id="dates-heading">Dates importantes.</h2><p>Les échéances officielles seront ajoutées ici dès leur confirmation.</p><dl class="dates-list"><div><dt>Ouverture des inscriptions</dt><dd data-config="registrationOpenDisplay">À annoncer</dd></div><div><dt>Date limite de soumission des résumés</dt><dd data-config="submissionDeadlineDisplay">À annoncer</dd></div><div><dt>Publication du programme définitif</dt><dd data-config="programmeReleaseDisplay">À annoncer</dd></div><div class="event-date-row"><dt>Journée doctorale PEME</dt><dd data-config="eventDateDisplay">À confirmer</dd></div></dl></section>
+        <section class="content-section participation-section" id="participer" aria-labelledby="participation-heading">
+          <p class="section-label">04 / REJOINDRE LA RENCONTRE</p><h2 id="participation-heading">Participer &amp; contribuer.</h2><p>Deux démarches pour prendre part à cette rencontre scientifique.</p>
+          <div class="participation-grid"><article class="participation-card registration-card"><span class="card-kicker">ASSISTER À LA JOURNÉE</span><h3>Inscription</h3><p>Réservez votre place et retrouvez les informations utiles concernant l’événement.</p><span class="card-status" data-status="registrationUrl">Ouverture prochaine</span><a class="button button-navy" data-link="registrationUrl" href="#participer">Accéder à l’inscription <span aria-hidden="true">↗</span></a></article><article class="participation-card submission-card"><span class="card-kicker">PRÉSENTER SES TRAVAUX</span><h3>Soumission</h3><p>Partagez vos travaux de recherche avec la communauté scientifique.</p><span class="card-status" data-status="submissionUrl">Ouverture prochaine</span><a class="button button-orange" data-link="submissionUrl" href="#participer">Soumettre un résumé <span aria-hidden="true">↗</span></a></article></div><p class="participation-note">Les modalités, dates limites et formats de soumission seront précisés par le comité d’organisation.</p>
+        </section>
+        <section class="content-section venue-section" id="infos" aria-labelledby="venue-heading"><p class="section-label">05 / INFORMATIONS PRATIQUES</p><h2 id="venue-heading">Rendez-vous à Khouribga.</h2><div class="venue-panel"><div class="venue-copy"><span class="card-kicker">LE LIEU DE LA RENCONTRE</span><h3>ENSA Khouribga</h3><p>École Nationale des Sciences Appliquées<br>Université Sultan Moulay Slimane<br>Khouribga, Maroc</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=ENSA%20Khouribga" target="_blank" rel="noopener noreferrer">Localiser l’ENSA Khouribga <span aria-hidden="true">↗</span></a></div><div class="venue-graphic" aria-hidden="true"><div class="map-line map-line-a"></div><div class="map-line map-line-b"></div><div class="map-line map-line-c"></div><span class="map-cross">+</span><div class="map-pin"><svg viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></div><span class="map-label">ENSA<br><strong>KHOURIBGA</strong></span></div></div></section>
+        <section class="content-section faq-section" aria-labelledby="faq-heading"><p class="section-label">PRÉPARER SA PARTICIPATION</p><h2 id="faq-heading">Questions fréquentes.</h2><div class="faq-list"><details><summary>Quand aura lieu la Journée doctorale ?</summary><p>La date exacte sera publiée sur ce site dès sa validation par le comité d’organisation.</p></details><details><summary>Comment s’inscrire ou soumettre un résumé ?</summary><p>Les formulaires seront accessibles dans la rubrique « Inscription &amp; soumission » lorsque les démarches seront ouvertes. Les consignes de soumission y seront également précisées.</p></details><details><summary>Où consulter le programme définitif ?</summary><p>Le programme détaillé sera disponible dans la rubrique « Programme » après confirmation des sessions.</p></details></div></section>
       </div>
-      <div class="container feature-grid">
-        <article class="feature"><span class="feature-number">01</span><div class="feature-symbol" aria-hidden="true">↗</div><h3>Présenter</h3><p>Mettre en valeur les avancées et les contributions des doctorants.</p></article>
-        <article class="feature"><span class="feature-number">02</span><div class="feature-symbol" aria-hidden="true">◎</div><h3>Échanger</h3><p>Confronter les approches et bénéficier de retours constructifs.</p></article>
-        <article class="feature"><span class="feature-number">03</span><div class="feature-symbol" aria-hidden="true">✳</div><h3>Collaborer</h3><p>Créer des liens entre chercheurs, équipes et disciplines.</p></article>
-      </div>
-    </section>
-
-    <section class="section section-programme" id="programme" aria-labelledby="programme-heading">
-      <div class="container programme-grid">
-        <div class="programme-intro"><p class="section-label section-label-bright"><span>02 /</span> LE PROGRAMME</p><h2 id="programme-heading">Une journée,<br><span class="gradient-text">mille perspectives.</span></h2><p>Le programme détaillé sera communiqué après validation par le comité d'organisation.</p><span class="program-tag"><span class="status-pip"></span> PROGRAMME INDICATIF · À CONFIRMER</span></div>
-        <div class="schedule" aria-label="Aperçu indicatif du programme">
-          <div class="schedule-heading"><span>PARCOURS DE LA JOURNÉE</span><span>APERÇU</span></div>
-          <div class="schedule-row"><div class="schedule-index">01 <span class="schedule-line"></span></div><div class="schedule-item"><span>OUVERTURE</span><h3>Accueil &amp; lancement</h3><p>Accueil des participants et ouverture de la rencontre.</p></div><span class="schedule-symbol" aria-hidden="true">↗</span></div>
-          <div class="schedule-row"><div class="schedule-index">02 <span class="schedule-line"></span></div><div class="schedule-item"><span>PARTAGE SCIENTIFIQUE</span><h3>Présentations &amp; discussions</h3><p>Communications scientifiques et échanges autour des travaux doctoraux.</p></div><span class="schedule-symbol" aria-hidden="true">✳</span></div>
-          <div class="schedule-row"><div class="schedule-index">03</div><div class="schedule-item"><span>CONNEXIONS</span><h3>Rencontres &amp; clôture</h3><p>Discussions, perspectives et conclusion de la journée.</p></div><span class="schedule-symbol" aria-hidden="true">◎</span></div>
-          <a class="schedule-download" data-link="programmeUrl" href="#programme">Le programme définitif sera disponible ici <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-participate" id="participer" aria-labelledby="participate-heading">
-      <div class="container"><div class="section-topline"><div><p class="section-label"><span>03 /</span> REJOINDRE L'ÉVÉNEMENT</p><h2 id="participate-heading">Faites partie <span class="gradient-text">de l'échange.</span></h2></div><p>Deux démarches pour participer à cette rencontre scientifique.</p></div>
-        <div class="participation-grid">
-          <article class="participation-card register-card"><div class="participation-card-top"><span class="participation-counter">01 / PARTICIPER</span><span class="participation-decoration" aria-hidden="true">↗</span></div><div class="participation-icon" aria-hidden="true">✧</div><h3>S'inscrire<br>à la journée.</h3><p>Réservez votre place et recevez les informations utiles concernant l'événement.</p><a class="card-action" data-link="registrationUrl" href="#contact">Accéder à l'inscription <span aria-hidden="true">↗</span></a><span class="card-status" data-status="registrationUrl">Ouverture prochaine</span></article>
-          <article class="participation-card submission-card"><div class="participation-card-top"><span class="participation-counter">02 / CONTRIBUER</span><span class="participation-decoration" aria-hidden="true">✳</span></div><div class="participation-icon" aria-hidden="true">⌘</div><h3>Soumettre<br>un résumé.</h3><p>Partagez vos travaux de recherche avec la communauté scientifique.</p><a class="card-action" data-link="submissionUrl" href="#contact">Déposer une communication <span aria-hidden="true">↗</span></a><span class="card-status" data-status="submissionUrl">Ouverture prochaine</span></article>
-        </div>
-        <p class="participation-note"><span aria-hidden="true">ⓘ</span> Les modalités, dates limites et formats de soumission seront précisés par le comité d'organisation.</p>
-      </div>
-    </section>
-
-    <section class="statement" aria-label="Message de l'événement"><div class="container statement-inner"><div class="statement-star" aria-hidden="true">✳</div><p>La prochaine idée naît parfois<br>d'une <em>rencontre.</em></p><span>PEME / JOURNÉE DOCTORALE</span></div></section>
-
-    <section class="section section-infos" id="infos" aria-labelledby="infos-heading"><div class="container info-layout"><div class="info-left"><p class="section-label"><span>04 /</span> INFORMATIONS PRATIQUES</p><h2 id="infos-heading">Le lieu de<br><span class="gradient-text">la rencontre.</span></h2><p>Retrouvez les premières informations pour préparer votre participation à la Journée doctorale.</p><div class="detail-list"><div class="detail-item"><div class="detail-icon" aria-hidden="true">⌖</div><div><span>LIEU</span><strong>ENSA Khouribga</strong></div></div><div class="detail-item"><div class="detail-icon" aria-hidden="true">◷</div><div><span>DATE</span><strong data-config="eventDateDisplay">À confirmer</strong></div></div><div class="detail-item"><div class="detail-icon" aria-hidden="true">✳</div><div><span>ORGANISATION</span><strong>Laboratoire PEME</strong></div></div></div><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=ENSA%20Khouribga" target="_blank" rel="noopener noreferrer">Localiser l'ENSA Khouribga <span aria-hidden="true">↗</span></a></div><div class="location-art" aria-label="Illustration de la localisation à Khouribga"><div class="map-grid" aria-hidden="true"></div><div class="map-road road-one" aria-hidden="true"></div><div class="map-road road-two" aria-hidden="true"></div><div class="map-road road-three" aria-hidden="true"></div><div class="location-pin" aria-hidden="true"><span>✳</span></div><div class="location-marker"><span>POINT DE RENCONTRE</span><strong>ENSA<br>KHOURIBGA</strong><small>MAROC</small></div><div class="map-meta">PEME / LOCALISATION <span>⌖</span></div></div></div></section>
-
-    <section class="section section-faq" aria-labelledby="faq-heading"><div class="container faq-layout"><div><p class="section-label"><span>05 /</span> QUESTIONS FRÉQUENTES</p><h2 id="faq-heading">À savoir<span class="gradient-text">.</span></h2><p>Quelques réponses pour préparer la journée.</p></div><div class="faq-list"><details><summary>Quand aura lieu la Journée doctorale ? <span aria-hidden="true">+</span></summary><p>La date exacte n'a pas encore été communiquée. Elle apparaîtra sur ce site dès sa validation par le comité d'organisation.</p></details><details><summary>Comment puis-je m'inscrire ? <span aria-hidden="true">+</span></summary><p>Un lien d'inscription sera mis à disposition dans la rubrique « Participer » lorsque le formulaire sera ouvert.</p></details><details><summary>Comment soumettre un résumé scientifique ? <span aria-hidden="true">+</span></summary><p>Les consignes de soumission et le formulaire de dépôt seront publiés dès leur validation.</p></details><details><summary>Où trouver le programme définitif ? <span aria-hidden="true">+</span></summary><p>Le programme détaillé sera disponible dans la rubrique « Programme » après confirmation des sessions.</p></details></div></div></section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-inner"><div><p class="section-label section-label-bright"><span>06 /</span> RESTONS EN CONTACT</p><h2 id="contact-heading">Une question ?<br><em>Parlons-en.</em></h2><p>Contactez l'équipe organisatrice pour toute question liée à l'événement.</p><div class="contact-email"><span class="contact-email-label">CONTACT DE L'ORGANISATION</span><span id="contact-value">Adresse e-mail à communiquer</span></div></div><div class="contact-visual" aria-hidden="true"><span>✳</span><span>RECHERCHE · ÉCHANGES · COLLABORATION</span></div></div></section>
+    </div>
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-inner"><div><p class="section-label">06 / CONTACT</p><h2 id="contact-heading">Poursuivons l’échange.</h2><p>Une question sur la Journée doctorale ? Contactez l’équipe organisatrice.</p></div><div class="contact-address"><span>CONTACT DE L’ORGANISATION</span><strong id="contact-value">Adresse e-mail à communiquer</strong><small>Laboratoire PEME · ENSA Khouribga</small></div></div></section>
   </main>
-  <footer class="footer"><div class="container footer-top"><a class="logo logo-footer" href="#haut" aria-label="Retour à l'accueil"><span class="logo-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="logo-copy"><strong>PEME<span class="logo-dot">.</span></strong><small>JOURNÉE DOCTORALE</small></span></a><nav aria-label="Navigation de pied de page"><a href="#apropos">À propos</a><a href="#programme">Programme</a><a href="#participer">Participer</a><a href="#contact">Contact</a></nav></div><div class="container footer-bottom"><span>© <span id="copyright-year">2026</span> Laboratoire PEME · ENSA Khouribga</span><span>Conçu pour la Journée doctorale <span data-config="edition">2026–2027</span></span></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><div><strong>PEME <span>/</span> Journée doctorale</strong><p>Recherche · Échanges · Collaboration</p></div><div class="footer-meta"><span>© <span id="copyright-year">2026</span> Laboratoire PEME · ENSA Khouribga</span><span>Édition <span data-config="edition">2026–2027</span></span><a href="#haut">Retour en haut ↑</a></div></div></footer>
   <div class="toast" role="status" aria-live="polite" id="toast" hidden></div>
 </body>
 </html>

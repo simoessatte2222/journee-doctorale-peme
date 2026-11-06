@@ -1,6 +1,6 @@
-# Site officiel — Journée doctorale PEME (maquette à personnaliser)
+# Journée doctorale PEME — thème conférence clair
 
-Première version du site web de la Journée doctorale du laboratoire PEME, ENSA Khouribga. Site statique, responsive, sans abonnement, sans dépendance à installer.
+Présentation claire du site de la Journée doctorale du laboratoire PEME, ENSA Khouribga. Site statique, responsive, sans abonnement ni dépendance à installer. La navigation par rubriques s'inspire du site de conférence AMT 2026 ; le contenu PEME reste propre à l'événement.
 
 ## 1. Tester le site sur votre ordinateur
 
@@ -12,6 +12,9 @@ Ouvrir `config.js` avec le Bloc-notes ou VS Code et modifier :
 
 - `edition` : édition affichée sur le site ;
 - `eventDateDisplay` : date officielle, après validation ;
+- `registrationOpenDisplay` : ouverture des inscriptions ;
+- `submissionDeadlineDisplay` : date limite de soumission des résumés ;
+- `programmeReleaseDisplay` : publication du programme définitif ;
 - `registrationUrl` : adresse HTTPS du formulaire d'inscription ;
 - `submissionUrl` : adresse HTTPS du formulaire de dépôt ;
 - `programmeUrl` : lien vers le programme définitif (PDF) ;
@@ -19,13 +22,13 @@ Ouvrir `config.js` avec le Bloc-notes ou VS Code et modifier :
 
 Par défaut, les deux boutons de formulaire affichent un message « pas encore disponible » et ne collectent aucune donnée. Dès que vous fournissez de vrais liens dans `config.js`, ils s'ouvrent dans un nouvel onglet.
 
-Pour modifier les textes, la description, les formats de la journée ou le programme indicatif, modifier `index.html`. Pour modifier les couleurs ou le style, modifier `styles.css`. Le logo présent est **une identité graphique de démonstration**, pas le logo officiel du laboratoire ou de l'établissement.
+Pour modifier les textes ou le programme indicatif, modifier `index.html`. Pour modifier les couleurs ou le style, modifier `styles.css`. Le logo de l'ENSA Khouribga est inclus dans `assets/ensa-khouribga.jpg`, tel que publié sur le site de conférence de l'école. L'icône P de l'onglet est une icône de l'événement, distincte du logo institutionnel. Voir `SOURCES.md` pour la provenance.
 
 ## 3. Publier gratuitement avec GitHub Pages
 
 1. Se connecter sur https://github.com et créer un dépôt **public**, par exemple `journee-doctorale-peme`.
 2. Dans le dépôt, cliquer sur **Add file > Upload files**.
-3. Déposer **le contenu du dossier** `site-journee-doctorale-peme` (fichiers `index.html`, `config.js`, `styles.css`, `script.js` et dossier `assets/`) à la racine du dépôt. Ne pas déposer seulement le fichier ZIP.
+3. Déposer **le contenu du dossier extrait** (fichiers `index.html`, `config.js`, `styles.css`, `script.js` et dossier `assets/`) à la racine du dépôt. Pour mettre à jour le site existant, remplacer les fichiers de mêmes noms. Ne pas déposer seulement le fichier ZIP.
 4. Valider avec **Commit changes**.
 5. Ouvrir **Settings > Pages**.
 6. Sous **Build and deployment**, choisir **Deploy from a branch** puis la branche **main**, dossier **/(root)** et cliquer sur **Save**.
@@ -50,7 +53,11 @@ Récupérer leurs liens de partage et les placer dans `config.js`. Si vous activ
 - `styles.css` : interface responsive ;
 - `script.js` : navigation et liens configurables ;
 - `config.js` : informations à personnaliser ;
-- `assets/favicon.svg` : icône de démonstration ;
+- `assets/favicon.svg` : icône PEME de l'onglet ;
+- `assets/ensa-khouribga.jpg` : logo institutionnel de l'école ;
+- `assets/science-banner.svg` : illustration scientifique originale ;
+- `LISEZ-MOI.txt` : guide rapide de mise à jour ;
+- `SOURCES.md` : référence visuelle et provenance du logo ;
 - `.nojekyll` : évite les traitements Jekyll inutiles.
 
 ## 6. Vérifications avant diffusion

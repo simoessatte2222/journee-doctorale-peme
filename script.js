@@ -36,17 +36,18 @@
   for (const link of document.querySelectorAll("[data-link]")) {
     const key = link.dataset.link;
     const url = validHttpUrl(config[key]);
-    const status = document.querySelector(`[data-status="${key}"]`);
+    const statuses = document.querySelectorAll(`[data-status="${key}"]`);
     if (url) {
       link.href = url;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      if (status) {
-        status.textContent = "Formulaire disponible";
+      for (const status of statuses) {
+        status.textContent = key === "programmeUrl" ? "Programme disponible" : "Formulaire disponible";
         status.classList.add("status-open");
       }
     } else {
-      link.href = "#participer";
+      link.href = key === "programmeUrl" ? "#programme" : "#participer";
+      link.classList.add("is-unavailable");
       link.addEventListener("click", (event) => {
         event.preventDefault();
         notify(key === "programmeUrl" ? "Le programme définitif sera publié après validation par les organisateurs." : "Le formulaire n'est pas encore disponible. Le lien sera activé après validation par les organisateurs.");
@@ -59,6 +60,7 @@
   if (contactValue && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail)) {
     const emailLink = document.createElement("a");
     emailLink.href = `mailto:${contactEmail}`;
+    emailLink.id = "contact-value";
     emailLink.textContent = contactEmail;
     contactValue.replaceWith(emailLink);
   }
@@ -80,4 +82,21 @@
   document.addEventListener("click", e => {
     if (nav && menuButton && !nav.contains(e.target) && !menuButton.contains(e.target)) closeMenu();
   });
+
+  const sectionLinks = [...document.querySelectorAll(".sidebar-links a")];
+  const sections = sectionLinks.map(link => document.querySelector(link.getAttribute("href"))).filter(Boolean);
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        for (const link of sectionLinks) {
+          const active = link.getAttribute("href") === `#${entry.target.id}`;
+          link.classList.toggle("is-active", active);
+          if (active) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        }
+      }
+    }, { rootMargin: "-100px 0px -50% 0px", threshold: 0 });
+    sections.forEach(section => observer.observe(section));
+  }
 })();

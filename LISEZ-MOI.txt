@@ -1,0 +1,36 @@
+SITE DE LA JOURNÉE DOCTORALE PEME — THÈME CONFÉRENCE CLAIR
+
+1. OUVRIR LE SITE
+Ouvrez index.html dans votre navigateur. Tous les éléments graphiques sont inclus : aucune installation ni police externe n'est nécessaire.
+
+2. METTRE À JOUR LE SITE SUR GITHUB
+Dans votre dépôt journee-doctorale-peme, choisissez Add file > Upload files.
+Glissez le CONTENU de ce dossier, y compris le dossier assets, dans la page.
+index.html doit être directement à la racine du dépôt, pas dans un sous-dossier.
+Validez avec Commit changes. La configuration GitHub Pages reste main / (root).
+La nouvelle version remplacera les fichiers de mêmes noms et sera publiée par GitHub Pages.
+
+3. COMPLÉTER LES INFORMATIONS
+Ouvrez config.js dans un éditeur de texte et modifiez uniquement les valeurs entre guillemets :
+- edition : édition de l'événement ;
+- eventDateDisplay : date officielle ;
+- registrationOpenDisplay : ouverture des inscriptions ;
+- submissionDeadlineDisplay : date limite de soumission ;
+- programmeReleaseDisplay : date de publication du programme ;
+- registrationUrl : lien du formulaire d'inscription ;
+- submissionUrl : lien du formulaire de soumission ;
+- programmeUrl : lien du programme PDF ;
+- contactEmail : adresse de contact de l'organisation.
+
+Les liens vides affichent un message d'indisponibilité. Aucune inscription ou soumission n'est simulée. Aucun renseignement personnel de participant ne doit être enregistré dans les fichiers publics du site.
+
+4. PERSONNALISER LE CONTENU
+index.html contient les textes et rubriques. styles.css définit la présentation.
+Le programme est un aperçu indicatif : aucun horaire, intervenant ou comité n'est inventé.
+Les nouveaux noms d'intervenants, dates et modalités pourront être ajoutés une fois confirmés.
+
+5. IDENTITÉ VISUELLE
+Le logo ENSA Khouribga est inclus dans assets/ensa-khouribga.jpg, sans modification de ses proportions ni de ses couleurs.
+La petite icône P de l'onglet représente la journée PEME ; elle ne remplace pas le logo institutionnel.
+La bannière scientifique est une illustration vectorielle originale.
+Les sources et la référence d'inspiration sont indiquées dans SOURCES.md.
